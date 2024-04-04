@@ -9,11 +9,11 @@ namespace LegacyApp
         /// <summary>
         /// This collection is used to simulate remote database
         /// </summary>
-        private readonly Dictionary<int, Client> Database;
+        private readonly Dictionary<int, Client> _database;
 
         public ClientRepository()
         {
-            Database = InitializeDataBase();
+            _database = InitializeDataBase();
         }
 
         private Dictionary<int, Client> InitializeDataBase()
@@ -76,13 +76,13 @@ namespace LegacyApp
         /// Simulating fetching a client from remote database
         /// </summary>
         /// <returns>Returning client object</returns>
-        internal Client GetById(int clientId)
+        public Client GetById(int clientId)
         {
             int randomWaitTime = new Random().Next(2000);
             Thread.Sleep(randomWaitTime);
 
-            if (Database.ContainsKey(clientId))
-                return Database[clientId];
+            if (_database.ContainsKey(clientId))
+                return _database[clientId];
 
             throw new ArgumentException($"User with id {clientId} does not exist in database");
         }
