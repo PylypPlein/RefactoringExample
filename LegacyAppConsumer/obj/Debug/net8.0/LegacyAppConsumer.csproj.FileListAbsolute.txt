@@ -34,3 +34,4 @@ C:\Users\gosc9\Desktop\zadanie_solution\LegacyAppConsumer\obj\Debug\net8.0\refin
 C:\Users\gosc9\Desktop\zadanie_solution\LegacyAppConsumer\obj\Debug\net8.0\LegacyAppConsumer.pdb
 C:\Users\gosc9\Desktop\zadanie_solution\LegacyAppConsumer\obj\Debug\net8.0\LegacyAppConsumer.genruntimeconfig.cache
 C:\Users\gosc9\Desktop\zadanie_solution\LegacyAppConsumer\obj\Debug\net8.0\ref\LegacyAppConsumer.dll
+C:\Users\gosc9\Desktop\zadanie_solution\LegacyAppConsumer\obj\Debug\net8.0\LegacyAppConsumer.sourcelink.json
