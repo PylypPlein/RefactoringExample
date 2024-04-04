@@ -9,8 +9,15 @@ namespace LegacyApp
         /// <summary>
         /// Simulating database
         /// </summary>
-        private readonly Dictionary<string, int> _database =
-            new Dictionary<string, int>()
+        private readonly Dictionary<string, int> _database;
+
+        public UserCreditService()
+        {
+            _database = InitializeDatabase();
+        }
+        private Dictionary<string, int> InitializeDatabase()
+        {
+            return new Dictionary<string, int>()
             {
                 {"Kowalski", 200},
                 {"Malewski", 20000},
@@ -18,6 +25,7 @@ namespace LegacyApp
                 {"Doe", 3000},
                 {"Kwiatkowski", 1000}
             };
+        }
         
         public void Dispose()
         {
